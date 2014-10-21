@@ -1,0 +1,6 @@
+增加文件夹及该文件夹中的文件：hardware/libhardware/modules/hdmirx/
+增加文件：hardware/libhardware/include/hardware/hdmirx.h
+在system/core/rootdir/ueventd.rc 中添加/dev/i2c-0 0666 root root
+增加文件：frameworks/base/services/jni/com_android_server_HdmirxService.cpp 
+add hdmrix jni initfunction at frameworks/base/services/jni/onload.cpp
+在frameworks/base/services/jni/Android.mk 加入一行：com_android_server_HdmirxService.cpp\
